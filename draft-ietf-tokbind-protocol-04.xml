@@ -55,7 +55,7 @@
     <!-- The abbreviated title is used in the page header - it is only necessary if the 
          full title is longer than 39 characters -->
 
-    <title>Secure Transport Layer Token Binding Protocol Version 1.0</title>
+    <title>Token Binding Protocol for Secure Transport Layers - Version 1.0</title>
 
     <!-- add 'role="editor"' below for the editors if appropriate -->
 
@@ -202,14 +202,13 @@
 
   <middle>
     <section title="Introduction">
-      <t>Servers generate various security tokens (e.g. HTTP cookies, OAuth tokens) for 
-      applications to access protected resources. Any party in possession of such token 
-      gains access to the protected resource. Attackers export bearer tokens from the user’s 
-      machine, present them to the servers, and impersonate authenticated users. The idea of 
-      Token Binding is to prevent such attacks by cryptographically binding application layer 
-      security tokens to 
-      an underlying secure tranport layer, e.g., TLS <xref target="RFC5246"/>, 
-      or QUIC <xref target="I-D.tsvwg-quic-protocol"/>.</t>
+      <t>Servers generate various security tokens (e.g. HTTP cookies, OAuth tokens) for applications
+      to access protected resources. Any party in possession of such token gains access to the
+      protected resource. Attackers export bearer tokens from the user’s machine, present them to
+      the servers, and impersonate authenticated users. The idea of Token Binding is to prevent such
+      attacks by cryptographically binding application layer security tokens to an underlying secure
+      tranport layer, e.g., TLS <xref target="RFC5246"/>, or QUIC <xref
+      target="I-D.tsvwg-quic-protocol"/>.</t>
 
       <t>A secure transport layer (STL) Token Binding is established by the user agent
       generating a private-public (i.e., asymmetric) key pair (possibly within a secure
