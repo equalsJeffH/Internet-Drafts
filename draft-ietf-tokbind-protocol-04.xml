@@ -377,8 +377,8 @@ struct {
           <t>Length: 32 bytes.</t>
         </list>
       </t>
-      <t>[[TODO: the above EKM declaration should perhaps be moved to <xref
-      target="I-D.ietf-tokbind-negotiation"/>]]</t>
+      <t>[[ISSUE: the above EKM declaration is TLS-specific and should perhaps be moved to
+      <xref target="I-D.ietf-tokbind-negotiation"/>]]</t>
 
       <t>An implementation MUST ignore any unknown extensions. Initially, no extension types are 
       defined. One of the possible uses of extensions envisioned at the time of this writing is 
