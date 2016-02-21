@@ -209,7 +209,7 @@
       Token Binding is to prevent such attacks by cryptographically binding application layer 
       security tokens to 
       an underlying secure tranport layer, e.g., TLS <xref target="RFC5246"/>, 
-      or QUIC <xref target="I-D.tsvwg-quic-protocol"/></t>
+      or QUIC <xref target="I-D.tsvwg-quic-protocol"/>.</t>
 
       <t>A secure transport layer (STL) Token Binding is established by the user agent
       generating a private-public (i.e., asymmetric) key pair (possibly within a secure
