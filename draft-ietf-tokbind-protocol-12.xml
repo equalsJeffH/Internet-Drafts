@@ -402,11 +402,13 @@
         RSAPublicKey.publicexponent contain the modulus and exponent of the 2048-bit RSA public key 
         represented in big-endian format, with leading zero bytes omitted.</t>
 
-        <t>When ecdsap256 is used, ECPoint.point contains the X coordinate followed by the Y 
-        coordinate of the Curve P-256 key. The X and Y coordinates are unsigned 32-byte integers 
-        encoded in big-endian format, preserving any leading zero bytes. Future specifications may 
-        define Token Binding keys using other elliptic curves with their corresponding signature 
-        and point formats.</t>
+        <t>When ecdsap256 is used, ECPoint.point contains the an elliptic curve public key, on 
+        Curve P-256 <xref target="FIPS.186-4.2013"/>, in
+        X9.62 uncompressed point form <xref target="ANSI.X9-62.2005"/>. This consists of the byte
+        0x04 followed by the public key's X coordinate followed by the Y coordinate. The X and Y
+        coordinates are unsigned 32-byte integers encoded in big-endian format, preserving any
+        leading zero bytes. Future specifications may define Token Binding keys using other elliptic
+        curves with their corresponding signature and point formats.</t>
 
         <t>Token Binding protocol implementations SHOULD make Token Binding IDs available to the 
         application as opaque byte sequences. E.g. server applications will use Token Binding IDs 
